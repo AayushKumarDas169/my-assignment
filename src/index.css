@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Define the exact typography parameters from your source file */
+@font-face {
+  font-family: 'Gerbil';
+  src: url('./assets/fonts/gerbil.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Wire up 'Gerbil' as the primary font rule for all text layers */
+  --font-sans: 'Gerbil', sans-serif;
+  
+  --color-brand-green: #E6F4EA;
+  --color-pill-green: #D1FAE5;
+  --color-pill-pink: #FBCFE8;
+  --color-underline-gold: #FBBF24;
+  --color-accent-coral: #F87171;
+}
+
+body {
+  font-family: 'Gerbil', sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  overflow-x: hidden;
+}
+
+/* Precision geometric mask mapping for background decorative triangles */
+.clip-triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
