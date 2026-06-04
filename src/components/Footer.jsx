@@ -8,7 +8,7 @@ export default function Footer() {
       <div 
         style={{
           position: "absolute",
-          right: "1000px",
+          right: "100px",
           top: "80px",
           width: "1920px",
           height: "6665px",
